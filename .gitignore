@@ -1,2 +1,4 @@
 .vscode/
-Debug/
+[Bb]in/
+*.cache
+ref*/
