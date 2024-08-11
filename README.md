@@ -4,3 +4,8 @@ Could you automate the generation of levels? and could you automate the solution
 
 # Language
 C# .NET
+
+
+# 1st Step
+
+Well, the first step is obviously to create the main game
