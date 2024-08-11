@@ -1,8 +1,8 @@
 ﻿
 
 
-// Main Program Class
-class MainProgram
+// Game Class
+class Game
 {
     public static void Main(string[] args)
     {
