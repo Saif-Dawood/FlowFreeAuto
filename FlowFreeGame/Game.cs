@@ -7,7 +7,7 @@ class Game
 {
     // a 2D array for storing what lives in the current cell in the board
     private string[,] board;
-    // private int colori = 0;
+    private Pipe[] pipes;
 
     public Game(int height, int width, int numPipes, int seed=0)
     {
@@ -22,6 +22,7 @@ class Game
         // For now must be less than 16 (no of colors)
         if (numPipes > 16)
             return;
+        this.pipes = new Pipe[numPipes];
 
         // put the pipe's nodes in random positions
         Random rand;
@@ -56,6 +57,7 @@ class Game
         
         board[x1,y1] = "s" + color.ToString().Substring(0,2);
         board[x2,y2] = "e" + color.ToString().Substring(0,2);
+        this.pipes.Append<Pipe>(new Pipe(x1, y1, x2, y2, color));
 
         return 0;
     }
