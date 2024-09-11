@@ -21,7 +21,7 @@ class Game
         // TODO
         // For now must be less than 16 (no of colors)
         if (numPipes > 16)
-            return;
+            numPipes = 16;
         this.pipes = new Pipe[numPipes];
 
         // put the pipe's nodes in random positions
